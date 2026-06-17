@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veri Kullanımı — FitArena</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#05070D;color:#e2e8f0;font-family:'Inter',sans-serif;font-size:15px;line-height:1.75;min-height:100vh;padding:0 16px 60px}
+  .wrap{max-width:680px;margin:0 auto;padding-top:56px}
+  .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(52,211,153,0.1);border:1px solid rgba(52,211,153,0.25);border-radius:999px;padding:5px 14px;margin-bottom:32px}
+  .badge span{font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:600;color:#34D399;letter-spacing:.04em}
+  h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(28px,5vw,40px);font-weight:700;line-height:1.15;margin-bottom:12px;background:linear-gradient(135deg,#fff 60%,#34D399);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .meta{font-size:13px;color:#64748b;margin-bottom:48px}
+  h2{font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:600;color:#fff;margin:40px 0 12px;padding-left:14px;border-left:3px solid #34D399}
+  p{color:#94a3b8;margin-bottom:12px}
+  ul{color:#94a3b8;padding-left:20px;margin-bottom:12px}
+  ul li{margin-bottom:6px}
+  a{color:#34D399;text-decoration:none}
+  a:hover{text-decoration:underline}
+  .divider{height:1px;background:linear-gradient(90deg,rgba(52,211,153,0.2),transparent);margin:48px 0}
+  .footer{font-size:13px;color:#475569;text-align:center;margin-top:48px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="badge"><span>🔒 FitArena</span></div>
+  <h1>Veri Kullanımı</h1>
+  <p class="meta">Son güncelleme: Haziran 2026</p>
+
+  <p>FitArena'nın hangi verileri topladığını ve bu verileri nasıl kullandığını aşağıda bulabilirsiniz.</p>
+
+  <h2>Kimlik Verileri</h2>
+  <ul>
+    <li>E-posta adresi — hesap oluşturma ve doğrulama için</li>
+  </ul>
+
+  <h2>Kullanıcı İçeriği</h2>
+  <ul>
+    <li>Antrenman kayıtları — ilerlemenizi takip etmek için, Firebase Firestore'da saklanır</li>
+    <li>Profil fotoğrafı — isteğe bağlı, Firebase Storage'da saklanır</li>
+  </ul>
+
+  <h2>Cihaz Verileri</h2>
+  <ul>
+    <li>Adım sayacı — yalnızca cihazınızda işlenir, sunucuya gönderilmez</li>
+  </ul>
+
+  <h2>Analitik</h2>
+  <ul>
+    <li>Firebase Crashlytics — uygulama hatalarını tespit etmek için kullanılır, kişisel tanımlayıcı veri içermez</li>
+  </ul>
+
+  <h2>Veri Saklama</h2>
+  <p>Hesabınızı sildiğinizde tüm verileriniz (antrenman kayıtları, profil bilgileri, oyun verileri) kalıcı olarak silinir. Bu işlem geri alınamaz.</p>
+
+  <div class="divider"></div>
+
+  <h2>İletişim</h2>
+  <p>Sorularınız için: <a href="mailto:redazzapp@gmail.com">redazzapp@gmail.com</a></p>
+
+  <p class="footer">© 2026 FitArena. Tüm hakları saklıdır.</p>
+</div>
+</body>
+</html>
