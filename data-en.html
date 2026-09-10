@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Usage — FitArena</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#05070D;color:#e2e8f0;font-family:'Inter',sans-serif;font-size:15px;line-height:1.75;min-height:100vh;padding:0 16px 60px}
+  .wrap{max-width:680px;margin:0 auto;padding-top:56px}
+  .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(52,211,153,0.1);border:1px solid rgba(52,211,153,0.25);border-radius:999px;padding:5px 14px;margin-bottom:32px}
+  .badge span{font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:600;color:#34D399;letter-spacing:.04em}
+  h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(28px,5vw,40px);font-weight:700;line-height:1.15;margin-bottom:12px;background:linear-gradient(135deg,#fff 60%,#34D399);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .meta{font-size:13px;color:#64748b;margin-bottom:48px}
+  h2{font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:600;color:#fff;margin:40px 0 12px;padding-left:14px;border-left:3px solid #34D399}
+  h3{font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:600;color:#cbd5e1;margin:26px 0 8px}
+  p{color:#94a3b8;margin-bottom:12px}
+  ul{color:#94a3b8;padding-left:20px;margin-bottom:12px}
+  ul li{margin-bottom:6px}
+  strong{color:#e2e8f0;font-weight:600}
+  table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:14px;display:block;overflow-x:auto}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid rgba(148,163,184,0.12)}
+  th{font-family:'Space Grotesk',sans-serif;font-weight:600;color:#fff;background:rgba(52,211,153,0.07);white-space:nowrap}
+  td{color:#94a3b8;vertical-align:top}
+  table.kv td:first-child{color:#cbd5e1;font-weight:500}
+  blockquote{border-left:3px solid rgba(52,211,153,0.45);background:rgba(52,211,153,0.05);padding:12px 16px;margin:14px 0 20px;border-radius:0 8px 8px 0}
+  blockquote p{margin:0;color:#cbd5e1}
+  a{color:#34D399;text-decoration:none}
+  a:hover{text-decoration:underline}
+  .divider{height:1px;background:linear-gradient(90deg,rgba(52,211,153,0.2),transparent);margin:48px 0}
+  .footer{font-size:13px;color:#475569;text-align:center;margin-top:48px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="badge"><span>🔒 FitArena</span></div>
+  <h1>Data Usage</h1>
+  <p class="meta">Last updated: September 2026</p>
+
+  <p>This page gives a summary of what data FitArena collects, whether it is encrypted, and whether it can be deleted. For detailed explanations, see the <a href="privacy-en.html">Privacy Policy</a>.</p>
+
+  <h2>Summary</h2>
+
+  <table class="kv">
+    <tbody>
+      <tr><td>Is data encrypted in transit?</td><td><strong>Yes</strong> — all transfer uses HTTPS/TLS</td></tr>
+      <tr><td>Can you delete your data?</td><td><strong>Yes</strong> — Profile → Settings → Delete My Account</td></tr>
+      <tr><td>Is data sold?</td><td><strong>No</strong></td></tr>
+      <tr><td>Is data shared for advertising or marketing?</td><td><strong>No</strong></td></tr>
+      <tr><td>Are camera images recorded?</td><td><strong>No</strong> — processed only on your device</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Data Collected</h2>
+
+  <h3>Personal Information</h3>
+
+  <table>
+    <thead><tr><th>Data</th><th>Collected</th><th>Shared</th><th>Required</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td>Email address</td><td>Yes</td><td>No</td><td>Depends on account type</td><td>Account management, authentication</td></tr>
+      <tr><td>Display name</td><td>Yes</td><td>Visible to other users</td><td>Yes</td><td>Profile, leaderboard</td></tr>
+      <tr><td>Age</td><td>Yes</td><td>No</td><td>Yes</td><td>Personalization</td></tr>
+      <tr><td>Gender</td><td>Yes</td><td>No</td><td>Yes</td><td>Personalization</td></tr>
+      <tr><td>Weight</td><td>Yes</td><td>No</td><td>Yes</td><td>Personalization, progress calculation</td></tr>
+      <tr><td>Bio</td><td>Yes</td><td>No</td><td>No</td><td>Profile</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Photos</h3>
+
+  <table>
+    <thead><tr><th>Data</th><th>Collected</th><th>Shared</th><th>Required</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td>Profile photo</td><td>Yes</td><td>No</td><td>No</td><td>Profile image</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Health and Fitness</h3>
+
+  <table>
+    <thead><tr><th>Data</th><th>Collected</th><th>Shared</th><th>Required</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td>Workout records</td><td>Yes</td><td>No</td><td>Yes</td><td>Progress tracking, game mechanics</td></tr>
+      <tr><td>Placement quiz answers</td><td>Yes</td><td>No</td><td>Yes</td><td>Workout recommendations, starting level</td></tr>
+      <tr><td>Step count</td><td>Processed on device</td><td>No</td><td>No</td><td>Daily goal indicator</td></tr>
+    </tbody>
+  </table>
+
+  <blockquote><p><strong>Note:</strong> Step data is read and processed only on your device; it is never sent to our servers.</p></blockquote>
+
+  <h3>Camera</h3>
+
+  <table>
+    <thead><tr><th>Data</th><th>Collected</th><th>Shared</th><th>Required</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td>Camera images</td><td><strong>Never recorded</strong></td><td>No</td><td>No</td><td>Real-time on-device motion detection only</td></tr>
+      <tr><td>Calculated movement result (count/duration)</td><td>Yes</td><td>No</td><td>No</td><td>Duel outcome and competitive score</td></tr>
+    </tbody>
+  </table>
+
+  <blockquote><p><strong>The camera turns on only when you start a duel.</strong> Images are processed on your device and are never recorded or sent to our servers. Only the numeric result is written to the server. This feature is optional; if you decline permission, the rest of the app works normally.</p></blockquote>
+
+  <h3>App Activity</h3>
+
+  <table>
+    <thead><tr><th>Data</th><th>Collected</th><th>Shared</th><th>Required</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td>Game progress (level, experience points, rank)</td><td>Yes</td><td>Rank is visible</td><td>Yes</td><td>Game mechanics</td></tr>
+      <tr><td>Competitive score (Rating)</td><td>Yes</td><td>Visible to other users</td><td>Yes</td><td>Leaderboard</td></tr>
+      <tr><td>Card collection</td><td>Yes</td><td>No</td><td>Yes</td><td>Game mechanics</td></tr>
+      <tr><td>Daily streak and quest progress</td><td>Yes</td><td>No</td><td>Yes</td><td>Motivation system</td></tr>
+      <tr><td>In-app currencies (coins, gems)</td><td>Yes</td><td>No</td><td>Yes</td><td>In-game economy</td></tr>
+    </tbody>
+  </table>
+
+  <h3>App Info and Performance</h3>
+
+  <table>
+    <thead><tr><th>Data</th><th>Collected</th><th>Shared</th><th>Required</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td>Crash and error logs</td><td>Yes</td><td>No</td><td>Yes</td><td>Error detection and fixing</td></tr>
+      <tr><td>Device model, OS version</td><td>Yes</td><td>No</td><td>Yes</td><td>Compatibility and error analysis</td></tr>
+    </tbody>
+  </table>
+
+  <blockquote><p>These logs are collected by Firebase Crashlytics and contain no name, email, or workout content.</p></blockquote>
+
+  <h3>Device or Other Identifiers</h3>
+
+  <table>
+    <thead><tr><th>Data</th><th>Collected</th><th>Shared</th><th>Required</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td>Advertising ID</td><td>By the ad provider</td><td>With the ad provider</td><td>No</td><td>Serving and measuring rewarded ads</td></tr>
+      <tr><td>Notification identifier (FCM token)</td><td>Yes</td><td>No</td><td>No</td><td>Sending notifications</td></tr>
+    </tbody>
+  </table>
+
+  <h2>What Other Users Can See</h2>
+
+  <p>Only the following appear on the leaderboard:</p>
+
+  <ul>
+    <li>Your display name</li>
+    <li>Your Rating score</li>
+    <li>Your rank</li>
+  </ul>
+
+  <p>All of your other information (email, age, weight, gender, bio, profile photo, workout records, in-app balances) is not visible to other users.</p>
+
+  <h2>Service Providers We Use</h2>
+
+  <table>
+    <thead><tr><th>Provider</th><th>Service</th></tr></thead>
+    <tbody>
+      <tr><td>Google Firebase</td><td>Authentication, database, file storage, crash reporting, notifications</td></tr>
+      <tr><td>Google AdMob</td><td>Rewarded ad serving</td></tr>
+      <tr><td>Google Play Services</td><td>Sign in with Google</td></tr>
+    </tbody>
+  </table>
+
+  <p>Your data may be processed on servers outside your country through these services.</p>
+
+  <h2>Retention and Deletion</h2>
+
+  <ul>
+    <li>Your data is retained for as long as your account is active.</li>
+    <li>You can permanently delete all of your data via <strong>Profile → Settings → Delete My Account</strong>.</li>
+    <li>Deletion cannot be undone; deleted data cannot be recovered.</li>
+    <li>Error logs are deleted automatically after a limited period under Firebase's own retention policy.</li>
+  </ul>
+
+  <div class="divider"></div>
+
+  <h2>Contact</h2>
+
+  <p>For questions about data usage: <strong><a href="mailto:redazzapp@gmail.com">redazzapp@gmail.com</a></strong></p>
+
+  <p class="footer">© 2026 Redazz. All rights reserved.</p>
+</div>
+</body>
+</html>

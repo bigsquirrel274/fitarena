@@ -14,9 +14,18 @@
   h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(28px,5vw,40px);font-weight:700;line-height:1.15;margin-bottom:12px;background:linear-gradient(135deg,#fff 60%,#60A5FA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
   .meta{font-size:13px;color:#64748b;margin-bottom:48px}
   h2{font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:600;color:#fff;margin:40px 0 12px;padding-left:14px;border-left:3px solid #60A5FA}
+  h3{font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:600;color:#cbd5e1;margin:26px 0 8px}
   p{color:#94a3b8;margin-bottom:12px}
   ul{color:#94a3b8;padding-left:20px;margin-bottom:12px}
   ul li{margin-bottom:6px}
+  strong{color:#e2e8f0;font-weight:600}
+  table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:14px;display:block;overflow-x:auto}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid rgba(148,163,184,0.12)}
+  th{font-family:'Space Grotesk',sans-serif;font-weight:600;color:#fff;background:rgba(96,165,250,0.07);white-space:nowrap}
+  td{color:#94a3b8;vertical-align:top}
+  table.kv td:first-child{color:#cbd5e1;font-weight:500}
+  blockquote{border-left:3px solid rgba(96,165,250,0.45);background:rgba(96,165,250,0.05);padding:12px 16px;margin:14px 0 20px;border-radius:0 8px 8px 0}
+  blockquote p{margin:0;color:#cbd5e1}
   a{color:#60A5FA;text-decoration:none}
   a:hover{text-decoration:underline}
   .divider{height:1px;background:linear-gradient(90deg,rgba(96,165,250,0.2),transparent);margin:48px 0}
@@ -27,40 +36,243 @@
 <div class="wrap">
   <div class="badge"><span>⚖️ FitArena</span></div>
   <h1>Gizlilik Politikası</h1>
-  <p class="meta">Son güncelleme: Haziran 2026</p>
+  <p class="meta">Son güncelleme: Eylül 2026</p>
 
-  <p>FitArena ("biz") olarak gizliliğinize saygı duyuyoruz. Bu politika, uygulamamızı kullanırken hangi verileri topladığımızı ve bu verileri nasıl kullandığımızı açıklar.</p>
+  <p>FitArena ("uygulama", "biz") olarak gizliliğinize önem veriyoruz. Bu politika; uygulamayı kullandığınızda hangi verileri topladığımızı, bunları neden ve nasıl işlediğimizi, kimlerle paylaştığımızı ve haklarınızı açıklar.</p>
 
-  <h2>Topladığımız Veriler</h2>
+  <p>Uygulamayı kullanarak bu politikada anlatılan veri işleme faaliyetlerini okuduğunuzu ve anladığınızı kabul etmiş olursunuz.</p>
+
+  <h2>1. Veri Sorumlusu</h2>
+
+  <table class="kv">
+    <tbody>
+      <tr><td>Uygulama</td><td>FitArena: Card &amp; Workout RPG</td></tr>
+      <tr><td>Geliştirici</td><td>Redazz</td></tr>
+      <tr><td>İletişim</td><td><a href="mailto:redazzapp@gmail.com">redazzapp@gmail.com</a></td></tr>
+    </tbody>
+  </table>
+
+  <p>Veri işleme faaliyetlerimizle ilgili her türlü soru, talep ve şikâyetinizi yukarıdaki e-posta adresine iletebilirsiniz.</p>
+
+  <h2>2. Topladığımız Veriler</h2>
+
+  <h3>2.1 Hesap Verileri</h3>
+
+  <table>
+    <thead><tr><th>Veri</th><th>Ne zaman toplanır</th><th>Neden</th></tr></thead>
+    <tbody>
+      <tr><td>E-posta adresi</td><td>E-posta ile kayıt olduğunuzda</td><td>Hesabınızı oluşturmak, giriş yapmanızı sağlamak, şifre sıfırlama</td></tr>
+      <tr><td>Google hesap bilgisi (e-posta, ad)</td><td>Google ile giriş yaptığınızda</td><td>Kimlik doğrulama</td></tr>
+      <tr><td>Anonim kullanıcı kimliği</td><td>Misafir olarak devam ettiğinizde</td><td>Hesap açmadan uygulamayı kullanabilmeniz</td></tr>
+    </tbody>
+  </table>
+
+  <p><strong>Misafir (anonim) hesaplar hakkında:</strong> Misafir olarak devam ettiğinizde e-postanızı almayız; verileriniz cihazınıza bağlı geçici bir kimlikle saklanır. Bu hesabı daha sonra Google veya e-posta ile kalıcı hesaba bağlayabilirsiniz; verileriniz korunur. Kalıcı hesaba bağlamazsanız, uygulamayı silmeniz ya da cihaz değiştirmeniz durumunda verilerinize erişiminizi kalıcı olarak kaybedebilirsiniz.</p>
+
+  <h3>2.2 Profil ve Kişisel Bilgiler</h3>
+
   <ul>
-    <li>E-posta adresi — hesap oluşturma ve doğrulama için</li>
-    <li>Antrenman verileri — ilerlemenizi takip etmek için</li>
-    <li>Adım sayacı verileri — yalnızca cihazınızda işlenir, sunucuya gönderilmez</li>
-    <li>Profil fotoğrafı — isteğe bağlı, Firebase Storage'da saklanır</li>
+    <li><strong>Görünen ad ve biyografi</strong> — profilinizde ve liderlik tablosunda gösterilir</li>
+    <li><strong>Profil fotoğrafı</strong> — isteğe bağlı; yüklerseniz Firebase Storage'da saklanır</li>
+    <li><strong>Yaş, cinsiyet, kilo</strong> — karakter oluştururken sizin girdiğiniz bilgiler; antrenman önerilerini ve ilerleme hesaplarını kişiselleştirmek için kullanılır</li>
   </ul>
 
-  <h2>Verilerinizi Nasıl Kullanıyoruz</h2>
+  <h3>2.3 Yerleştirme Anketi Cevapları</h3>
+
+  <p>Uygulamaya ilk girişte size fitness deneyiminiz, hedefiniz, tercih ettiğiniz kategori, haftada kaç gün antrenman yapmayı düşündüğünüz ve belirli hareketleri (squat, şınav, plank, lunge) yapıp yapamadığınız sorulur. Bu cevaplar:</p>
+
   <ul>
-    <li>Hesabınızı yönetmek için</li>
-    <li>Uygulama özelliklerini sunmak için</li>
-    <li>Uygulama performansını ve kararlılığını iyileştirmek için (Firebase Crashlytics)</li>
+    <li>başlangıç rekabet puanınızı (Reyting) belirlemek,</li>
+    <li>size uygun antrenman listesi önermek,</li>
+    <li>günlük hedeflerinizi kişiselleştirmek</li>
   </ul>
 
-  <h2>Üçüncü Taraf Paylaşımı</h2>
-  <p>Verilerinizi üçüncü taraflarla satmıyor veya ticari amaçla paylaşmıyoruz.</p>
+  <p>için kullanılır. Bu cevaplar tıbbi bir değerlendirme değildir ve tıbbi amaçla kullanılmaz.</p>
 
-  <h2>Hesap Silme</h2>
-  <p>Profil → Ayarlar → Hesabımı Sil adımlarını izleyerek tüm verilerinizi kalıcı olarak silebilirsiniz. Silme işlemi geri alınamaz.</p>
+  <h3>2.4 Antrenman ve Oyun Verileri</h3>
 
-  <h2>Minimum Yaş</h2>
-  <p>FitArena 13 yaş ve üzeri kullanıcılara yöneliktir. 13 yaşın altındaki bireylerin verilerini bilerek toplamıyoruz.</p>
+  <ul>
+    <li>Tamamladığınız antrenmanlar, süreleri, kategorileri ve kazandığınız deneyim puanı</li>
+    <li>Günlük seri (streak) bilgisi ve seri koruma haklarınız</li>
+    <li>Seviye, deneyim puanı, rütbe, Reyting puanı, galibiyet/mağlubiyet sayıları</li>
+    <li>Açtığınız kartlar, kart seviyeleri, vitrin seçimleriniz</li>
+    <li>Oyun içi para birimleri (coin, gem) ve günlük görev ilerlemeniz</li>
+  </ul>
+
+  <h3>2.5 Kamera Verileri</h3>
+
+  <p>Kamera kullanımı ayrı ve ayrıntılı olarak <strong>Bölüm 3</strong>'te açıklanmıştır. Özet: kamera görüntüleri yalnızca cihazınızda işlenir, hiçbir şekilde kaydedilmez veya bize gönderilmez.</p>
+
+  <h3>2.6 Adım Sayacı Verileri</h3>
+
+  <p>İzin verirseniz cihazınızın adım sayacından günlük adım sayınızı okuruz. <strong>Bu veri yalnızca cihazınızda işlenir ve sunucularımıza gönderilmez.</strong></p>
+
+  <h3>2.7 Teknik ve Hata Verileri</h3>
+
+  <p>Uygulama çöktüğünde veya hata verdiğinde, sorunu tespit edip düzeltebilmemiz için Firebase Crashlytics aracılığıyla teknik bilgi toplanır: cihaz modeli, işletim sistemi sürümü, uygulama sürümü, hatanın oluştuğu ekran ve hata kaydı. Bu kayıtlar adınızı, e-postanızı veya antrenman içeriğinizi içermez.</p>
+
+  <h3>2.8 Reklam Verileri</h3>
+
+  <p>Uygulamada, isteğe bağlı olarak izleyebileceğiniz ödüllü reklamlar bulunur (örneğin günlük görev yenileme hakkı kazanmak için). Reklamlar Google AdMob tarafından sunulur. AdMob, reklam gösterimi ve ölçümü için cihazınızın reklam kimliğine (Advertising ID) ve genel cihaz/konum sinyallerine erişebilir. Kişiselleştirilmiş reklam tercihlerinizi cihazınızın ayarlarından yönetebilirsiniz.</p>
+
+  <p>Reklam izlemek zorunlu değildir; izlemediğinizde uygulamanın temel özellikleri çalışmaya devam eder.</p>
+
+  <h3>2.9 Bildirim Kimliği</h3>
+
+  <p>Bildirimlere izin verirseniz, cihazınıza bildirim gönderebilmek için Firebase Cloud Messaging tarafından üretilen bir cihaz kimliği (token) saklanır. Bildirimleri cihaz ayarlarından istediğiniz zaman kapatabilirsiniz.</p>
+
+  <h2>3. Kamera Kullanımı</h2>
+
+  <p>Bu bölüm, uygulamanın en hassas iznini açıklar. Lütfen dikkatle okuyun.</p>
+
+  <h3>Kamera ne zaman açılır?</h3>
+
+  <p>Kamera <strong>yalnızca</strong> siz bir Ghost PvP düellosu başlattığınızda açılır. Uygulamanın diğer hiçbir bölümünde, arka planda veya siz farkında olmadan kamera çalışmaz.</p>
+
+  <h3>Görüntülerinize ne oluyor?</h3>
+
+  <ul>
+    <li>Kamera görüntüsü <strong>cihazınızın içinde, gerçek zamanlı olarak</strong> işlenir. Bunun için Google ML Kit poz tespiti kütüphanesi kullanılır ve bu işlem tamamen cihazınızda (çevrimdışı) gerçekleşir.</li>
+    <li>Görüntüden yalnızca vücut eklem noktalarınızın konumu hesaplanır; buradan hareket sayınız (örneğin kaç squat yaptığınız) çıkarılır.</li>
+    <li><strong>Hiçbir fotoğraf veya video kaydedilmez.</strong> Ne cihazınıza kaydedilir, ne sunucularımıza gönderilir, ne de üçüncü taraflarla paylaşılır.</li>
+    <li>Sunucularımıza kaydedilen tek şey <strong>sayısal sonuçtur</strong>: tekrar sayınız, süre ve düello sonucu.</li>
+    <li>Kamera oturumu, düello ekranından çıktığınız anda kapatılır.</li>
+  </ul>
+
+  <h3>İzni geri almak</h3>
+
+  <p>Kamera iznini cihazınızın ayarlarından istediğiniz zaman geri alabilirsiniz. İzni verdiğinizde yalnızca kamera tabanlı düello özelliği çalışmaz; antrenman kaydı, kart koleksiyonu, seri takibi ve uygulamanın diğer tüm özellikleri normal şekilde çalışmaya devam eder.</p>
+
+  <h3>Egzersiz ortamınız</h3>
+
+  <p>Kamerayı kullanırken çevrenizde bulunan kişilerin ve mekânın kamera görüş alanına girebileceğini unutmayın. Görüntü kaydedilmediği için bu veriler bize ulaşmaz; yine de mahremiyetiniz açısından uygun bir ortam seçmenizi öneririz.</p>
+
+  <h2>4. Verilerinizi Neden İşliyoruz</h2>
+
+  <table>
+    <thead><tr><th>Amaç</th><th>İşlenen veriler</th></tr></thead>
+    <tbody>
+      <tr><td>Hesabınızı oluşturmak ve yönetmek</td><td>Hesap verileri, profil bilgileri</td></tr>
+      <tr><td>Uygulamanın temel özelliklerini sunmak</td><td>Antrenman, oyun, kamera sonuç verileri</td></tr>
+      <tr><td>Deneyimi kişiselleştirmek</td><td>Anket cevapları, yaş/cinsiyet/kilo, antrenman geçmişi</td></tr>
+      <tr><td>Rekabet ve liderlik tablosunu işletmek</td><td>Görünen ad, Reyting, rütbe</td></tr>
+      <tr><td>Hataları tespit edip uygulamayı iyileştirmek</td><td>Teknik ve hata verileri</td></tr>
+      <tr><td>Reklam göstermek ve ölçmek</td><td>Reklam kimliği ve cihaz sinyalleri (AdMob tarafından)</td></tr>
+      <tr><td>Bildirim göndermek</td><td>Bildirim kimliği</td></tr>
+      <tr><td>Kötüye kullanımı önlemek ve hesap güvenliğini sağlamak</td><td>Hesap ve oyun verileri</td></tr>
+    </tbody>
+  </table>
+
+  <h2>5. Herkese Açık Olan Veriler</h2>
+
+  <p>Aşağıdaki bilgiler, uygulamayı kullanan <strong>diğer kullanıcılar tarafından görülebilir</strong>:</p>
+
+  <ul>
+    <li>Görünen adınız</li>
+    <li>Reyting puanınız</li>
+    <li>Rütbeniz</li>
+  </ul>
+
+  <p>Bu bilgiler liderlik tablosunda yayınlanır. Görünmek istemiyorsanız, görünen adınızı sizi tanımlamayan bir takma adla değiştirebilirsiniz.</p>
+
+  <p>Profil fotoğrafınız, biyografiniz, yaşınız, kilonuz, e-postanız, antrenman kayıtlarınız ve oyun içi bakiyeleriniz <strong>diğer kullanıcılara açık değildir</strong>.</p>
+
+  <h2>6. Üçüncü Taraflar ve Yurt Dışına Aktarım</h2>
+
+  <p>Verilerinizi satmıyoruz ve pazarlama amacıyla üçüncü taraflarla paylaşmıyoruz.</p>
+
+  <p>Uygulamanın çalışabilmesi için aşağıdaki hizmet sağlayıcıları kullanıyoruz:</p>
+
+  <table>
+    <thead><tr><th>Sağlayıcı</th><th>Hizmet</th><th>İşlenen veri</th></tr></thead>
+    <tbody>
+      <tr><td>Google Firebase</td><td>Kimlik doğrulama, veritabanı, dosya depolama, hata takibi, bildirim</td><td>Hesap, profil, antrenman ve oyun verileri; teknik hata kayıtları</td></tr>
+      <tr><td>Google AdMob</td><td>Reklam gösterimi</td><td>Reklam kimliği, cihaz sinyalleri</td></tr>
+      <tr><td>Google Play Hizmetleri</td><td>Google ile giriş</td><td>Google hesap bilgisi</td></tr>
+    </tbody>
+  </table>
+
+  <p>Bu hizmetler Google tarafından işletilmekte olup verileriniz Türkiye dışındaki sunucularda (Avrupa Birliği ve Amerika Birleşik Devletleri dahil) işlenebilir ve saklanabilir. Uygulamayı kullanarak bu aktarımı kabul etmiş olursunuz.</p>
+
+  <p>Ayrıca; yasal bir yükümlülüğün yerine getirilmesi, resmî bir talebin karşılanması veya haklarımızın korunması gerektiğinde verilerinizi yetkili makamlarla paylaşabiliriz.</p>
+
+  <h2>7. Veri Saklama Süresi</h2>
+
+  <ul>
+    <li>Hesap, profil, antrenman ve oyun verileriniz <strong>hesabınız aktif olduğu sürece</strong> saklanır.</li>
+    <li>Hesabınızı sildiğinizde bu veriler <strong>kalıcı olarak silinir</strong> (bkz. Bölüm 8).</li>
+    <li>Hata kayıtları, Firebase Crashlytics'in kendi saklama politikası uyarınca sınırlı bir süre tutulur ve sonra otomatik silinir.</li>
+    <li>Yasal saklama yükümlülüğü bulunan veriler, ilgili sürenin sonuna kadar saklanabilir.</li>
+  </ul>
+
+  <h2>8. Hesabınızı ve Verilerinizi Silme</h2>
+
+  <p>Uygulama içinden <strong>Profil → Ayarlar → Hesabımı Sil</strong> adımlarını izleyerek hesabınızı ve tüm verilerinizi kalıcı olarak silebilirsiniz.</p>
+
+  <p>Silme işlemi sırasında güvenliğiniz için kimliğinizi yeniden doğrulamanız istenir. Silme tamamlandığında; profiliniz, antrenman kayıtlarınız, kart koleksiyonunuz, oyun içi bakiyeleriniz ve liderlik tablosu kaydınız kalıcı olarak silinir.</p>
+
+  <p><strong>Bu işlem geri alınamaz.</strong> Silinen veriler kurtarılamaz.</p>
+
+  <p>Uygulamaya erişiminiz yoksa, silme talebinizi <a href="mailto:redazzapp@gmail.com">redazzapp@gmail.com</a> adresine iletebilirsiniz.</p>
+
+  <h2>9. Haklarınız</h2>
+
+  <p>Yürürlükteki veri koruma mevzuatı (Türkiye'de 6698 sayılı Kişisel Verilerin Korunması Kanunu, Avrupa Birliği'nde GDPR) uyarınca aşağıdaki haklara sahipsiniz:</p>
+
+  <ul>
+    <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme ve işlenmişse bilgi talep etme</li>
+    <li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme</li>
+    <li>Verilerinizin yurt içinde veya yurt dışında aktarıldığı tarafları bilme</li>
+    <li>Eksik veya yanlış işlenmiş verilerinizin düzeltilmesini isteme</li>
+    <li>Verilerinizin silinmesini veya yok edilmesini isteme</li>
+    <li>Düzeltme, silme ve yok etme işlemlerinin verilerin aktarıldığı taraflara bildirilmesini isteme</li>
+    <li>İşlemenin kısıtlanmasını veya işlemeye itiraz etme</li>
+    <li>Verilerinizin bir kopyasını taşınabilir bir formatta talep etme</li>
+    <li>Otomatik sistemler yoluyla analiz edilmeniz sonucu aleyhinize bir sonuç doğmasına itiraz etme</li>
+    <li>Hukuka aykırı işleme nedeniyle zarara uğramanız hâlinde zararın giderilmesini talep etme</li>
+  </ul>
+
+  <p>Bu haklarınızı kullanmak için <a href="mailto:redazzapp@gmail.com">redazzapp@gmail.com</a> adresine yazabilirsiniz. Talebinizi en geç 30 gün içinde sonuçlandırırız.</p>
+
+  <p>Ayrıca, haklarınızın ihlal edildiğini düşünüyorsanız yetkili veri koruma otoritesine (Türkiye'de Kişisel Verileri Koruma Kurumu) şikâyette bulunma hakkınız saklıdır.</p>
+
+  <h2>10. Çocukların Gizliliği</h2>
+
+  <p>FitArena <strong>13 yaş ve üzeri</strong> kullanıcılara yöneliktir. 13 yaşın altındaki kişilerden bilerek veri toplamayız.</p>
+
+  <p>13 yaşından küçük bir çocuğun bize veri sağladığını fark edersek, ilgili hesabı ve verileri gecikmeksizin sileriz. Çocuğunuzun bize veri sağladığını düşünüyorsanız lütfen <a href="mailto:redazzapp@gmail.com">redazzapp@gmail.com</a> adresinden bizimle iletişime geçin.</p>
+
+  <p>Bulunduğunuz ülkede geçerli yaş sınırı daha yüksekse, o sınır uygulanır.</p>
+
+  <h2>11. Veri Güvenliği</h2>
+
+  <p>Verilerinizi korumak için aldığımız başlıca önlemler:</p>
+
+  <ul>
+    <li>Tüm veri aktarımı şifreli bağlantı (HTTPS/TLS) üzerinden yapılır</li>
+    <li>Veritabanı erişimi sunucu taraflı güvenlik kurallarıyla sınırlandırılmıştır; kullanıcılar yalnızca kendi verilerine erişebilir</li>
+    <li>Şifreler bizim tarafımızdan görülmez veya saklanmaz; kimlik doğrulama Firebase Authentication tarafından yönetilir</li>
+    <li>Kamera görüntüleri hiçbir zaman cihazdan çıkmaz</li>
+    <li>Oyun içi ekonomik değerler (puan, para birimi) sunucu tarafında sınır kontrollerine tabidir</li>
+  </ul>
+
+  <p>Hiçbir sistemin %100 güvenli olmadığını hatırlatmak isteriz. Verilerinizi korumak için elimizden geleni yapıyoruz, ancak internet üzerinden yapılan aktarımın mutlak güvenliğini garanti edemeyiz.</p>
+
+  <h2>12. Bu Politikadaki Değişiklikler</h2>
+
+  <p>Bu politikayı zaman zaman güncelleyebiliriz. Önemli bir değişiklik olduğunda uygulama içinde bilgilendirme yaparız. Güncel sürüme her zaman bu sayfadan ulaşabilirsiniz.</p>
+
+  <p>Sayfanın başındaki "Son güncelleme" tarihi, politikanın en son ne zaman değiştirildiğini gösterir.</p>
 
   <div class="divider"></div>
 
-  <h2>İletişim</h2>
-  <p>Sorularınız için: <a href="mailto:redazzapp@gmail.com">redazzapp@gmail.com</a></p>
+  <h2>13. İletişim</h2>
 
-  <p class="footer">© 2026 FitArena. Tüm hakları saklıdır.</p>
+  <p>Bu politika veya kişisel verilerinizle ilgili her konuda bize ulaşabilirsiniz:</p>
+
+  <p><strong><a href="mailto:redazzapp@gmail.com">redazzapp@gmail.com</a></strong></p>
+
+  <p class="footer">© 2026 Redazz. Tüm hakları saklıdır.</p>
 </div>
 </body>
 </html>

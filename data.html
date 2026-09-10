@@ -14,9 +14,18 @@
   h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(28px,5vw,40px);font-weight:700;line-height:1.15;margin-bottom:12px;background:linear-gradient(135deg,#fff 60%,#34D399);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
   .meta{font-size:13px;color:#64748b;margin-bottom:48px}
   h2{font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:600;color:#fff;margin:40px 0 12px;padding-left:14px;border-left:3px solid #34D399}
+  h3{font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:600;color:#cbd5e1;margin:26px 0 8px}
   p{color:#94a3b8;margin-bottom:12px}
   ul{color:#94a3b8;padding-left:20px;margin-bottom:12px}
   ul li{margin-bottom:6px}
+  strong{color:#e2e8f0;font-weight:600}
+  table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:14px;display:block;overflow-x:auto}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid rgba(148,163,184,0.12)}
+  th{font-family:'Space Grotesk',sans-serif;font-weight:600;color:#fff;background:rgba(52,211,153,0.07);white-space:nowrap}
+  td{color:#94a3b8;vertical-align:top}
+  table.kv td:first-child{color:#cbd5e1;font-weight:500}
+  blockquote{border-left:3px solid rgba(52,211,153,0.45);background:rgba(52,211,153,0.05);padding:12px 16px;margin:14px 0 20px;border-radius:0 8px 8px 0}
+  blockquote p{margin:0;color:#cbd5e1}
   a{color:#34D399;text-decoration:none}
   a:hover{text-decoration:underline}
   .divider{height:1px;background:linear-gradient(90deg,rgba(52,211,153,0.2),transparent);margin:48px 0}
@@ -27,40 +36,148 @@
 <div class="wrap">
   <div class="badge"><span>🔒 FitArena</span></div>
   <h1>Veri Kullanımı</h1>
-  <p class="meta">Son güncelleme: Haziran 2026</p>
+  <p class="meta">Son güncelleme: Eylül 2026</p>
 
-  <p>FitArena'nın hangi verileri topladığını ve bu verileri nasıl kullandığını aşağıda bulabilirsiniz.</p>
+  <p>Bu sayfa, FitArena'nın hangi verileri topladığını, bu verilerin şifrelenip şifrelenmediğini ve silinip silinemeyeceğini özet hâlinde gösterir. Ayrıntılı açıklamalar için <a href="privacy.html">Gizlilik Politikası</a> sayfasına bakabilirsiniz.</p>
 
-  <h2>Kimlik Verileri</h2>
+  <h2>Özet</h2>
+
+  <table class="kv">
+    <tbody>
+      <tr><td>Veriler şifreli aktarılıyor mu?</td><td><strong>Evet</strong> — tüm aktarım HTTPS/TLS üzerinden yapılır</td></tr>
+      <tr><td>Verilerinizi silebiliyor musunuz?</td><td><strong>Evet</strong> — Profil → Ayarlar → Hesabımı Sil</td></tr>
+      <tr><td>Veri satılıyor mu?</td><td><strong>Hayır</strong></td></tr>
+      <tr><td>Reklam veya pazarlama amacıyla paylaşılıyor mu?</td><td><strong>Hayır</strong></td></tr>
+      <tr><td>Kamera görüntüsü kaydediliyor mu?</td><td><strong>Hayır</strong> — yalnızca cihazınızda işlenir</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Toplanan Veriler</h2>
+
+  <h3>Kişisel Bilgiler</h3>
+
+  <table>
+    <thead><tr><th>Veri</th><th>Toplanıyor</th><th>Paylaşılıyor</th><th>Zorunlu</th><th>Amaç</th></tr></thead>
+    <tbody>
+      <tr><td>E-posta adresi</td><td>Evet</td><td>Hayır</td><td>Hesap türüne bağlı</td><td>Hesap yönetimi, kimlik doğrulama</td></tr>
+      <tr><td>Görünen ad</td><td>Evet</td><td>Diğer kullanıcılara görünür</td><td>Evet</td><td>Profil, liderlik tablosu</td></tr>
+      <tr><td>Yaş</td><td>Evet</td><td>Hayır</td><td>Evet</td><td>Kişiselleştirme</td></tr>
+      <tr><td>Cinsiyet</td><td>Evet</td><td>Hayır</td><td>Evet</td><td>Kişiselleştirme</td></tr>
+      <tr><td>Kilo</td><td>Evet</td><td>Hayır</td><td>Evet</td><td>Kişiselleştirme, ilerleme hesabı</td></tr>
+      <tr><td>Biyografi</td><td>Evet</td><td>Hayır</td><td>Hayır</td><td>Profil</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Fotoğraflar</h3>
+
+  <table>
+    <thead><tr><th>Veri</th><th>Toplanıyor</th><th>Paylaşılıyor</th><th>Zorunlu</th><th>Amaç</th></tr></thead>
+    <tbody>
+      <tr><td>Profil fotoğrafı</td><td>Evet</td><td>Hayır</td><td>Hayır</td><td>Profil görseli</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Sağlık ve Fitness</h3>
+
+  <table>
+    <thead><tr><th>Veri</th><th>Toplanıyor</th><th>Paylaşılıyor</th><th>Zorunlu</th><th>Amaç</th></tr></thead>
+    <tbody>
+      <tr><td>Antrenman kayıtları</td><td>Evet</td><td>Hayır</td><td>Evet</td><td>İlerleme takibi, oyun mekaniği</td></tr>
+      <tr><td>Yerleştirme anketi cevapları</td><td>Evet</td><td>Hayır</td><td>Evet</td><td>Antrenman önerisi, başlangıç seviyesi</td></tr>
+      <tr><td>Adım sayısı</td><td>Cihazda işlenir</td><td>Hayır</td><td>Hayır</td><td>Günlük hedef göstergesi</td></tr>
+    </tbody>
+  </table>
+
+  <blockquote><p><strong>Not:</strong> Adım verisi yalnızca cihazınızda okunur ve işlenir; sunucularımıza gönderilmez.</p></blockquote>
+
+  <h3>Kamera</h3>
+
+  <table>
+    <thead><tr><th>Veri</th><th>Toplanıyor</th><th>Paylaşılıyor</th><th>Zorunlu</th><th>Amaç</th></tr></thead>
+    <tbody>
+      <tr><td>Kamera görüntüsü</td><td><strong>Kaydedilmez</strong></td><td>Hayır</td><td>Hayır</td><td>Yalnızca cihazda gerçek zamanlı hareket tespiti</td></tr>
+      <tr><td>Hesaplanan hareket sonucu (sayı/süre)</td><td>Evet</td><td>Hayır</td><td>Hayır</td><td>Düello sonucu ve rekabet puanı</td></tr>
+    </tbody>
+  </table>
+
+  <blockquote><p><strong>Kamera yalnızca siz bir düello başlattığınızda açılır.</strong> Görüntüler cihazınızda işlenir, hiçbir zaman kaydedilmez veya sunucularımıza gönderilmez. Sunucuya yalnızca sayısal sonuç yazılır. Bu özellik isteğe bağlıdır; izin vermezseniz uygulamanın geri kalanı normal çalışır.</p></blockquote>
+
+  <h3>Uygulama Etkinliği</h3>
+
+  <table>
+    <thead><tr><th>Veri</th><th>Toplanıyor</th><th>Paylaşılıyor</th><th>Zorunlu</th><th>Amaç</th></tr></thead>
+    <tbody>
+      <tr><td>Oyun ilerlemesi (seviye, deneyim puanı, rütbe)</td><td>Evet</td><td>Rütbe görünür</td><td>Evet</td><td>Oyun mekaniği</td></tr>
+      <tr><td>Rekabet puanı (Reyting)</td><td>Evet</td><td>Diğer kullanıcılara görünür</td><td>Evet</td><td>Liderlik tablosu</td></tr>
+      <tr><td>Kart koleksiyonu</td><td>Evet</td><td>Hayır</td><td>Evet</td><td>Oyun mekaniği</td></tr>
+      <tr><td>Günlük seri ve görev ilerlemesi</td><td>Evet</td><td>Hayır</td><td>Evet</td><td>Motivasyon sistemi</td></tr>
+      <tr><td>Oyun içi para birimleri (coin, gem)</td><td>Evet</td><td>Hayır</td><td>Evet</td><td>Oyun ekonomisi</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Uygulama Bilgileri ve Performans</h3>
+
+  <table>
+    <thead><tr><th>Veri</th><th>Toplanıyor</th><th>Paylaşılıyor</th><th>Zorunlu</th><th>Amaç</th></tr></thead>
+    <tbody>
+      <tr><td>Hata ve çökme kayıtları</td><td>Evet</td><td>Hayır</td><td>Evet</td><td>Hata tespiti ve düzeltme</td></tr>
+      <tr><td>Cihaz modeli, işletim sistemi sürümü</td><td>Evet</td><td>Hayır</td><td>Evet</td><td>Uyumluluk ve hata analizi</td></tr>
+    </tbody>
+  </table>
+
+  <blockquote><p>Bu kayıtlar Firebase Crashlytics tarafından toplanır ve adınızı, e-postanızı veya antrenman içeriğinizi içermez.</p></blockquote>
+
+  <h3>Cihaz veya Diğer Kimlikler</h3>
+
+  <table>
+    <thead><tr><th>Veri</th><th>Toplanıyor</th><th>Paylaşılıyor</th><th>Zorunlu</th><th>Amaç</th></tr></thead>
+    <tbody>
+      <tr><td>Reklam kimliği (Advertising ID)</td><td>Reklam sağlayıcı tarafından</td><td>Reklam sağlayıcıyla</td><td>Hayır</td><td>Ödüllü reklam gösterimi ve ölçümü</td></tr>
+      <tr><td>Bildirim kimliği (FCM token)</td><td>Evet</td><td>Hayır</td><td>Hayır</td><td>Bildirim gönderimi</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Diğer Kullanıcılara Görünen Bilgiler</h2>
+
+  <p>Liderlik tablosunda yalnızca şunlar yayınlanır:</p>
+
   <ul>
-    <li>E-posta adresi — hesap oluşturma ve doğrulama için</li>
+    <li>Görünen adınız</li>
+    <li>Reyting puanınız</li>
+    <li>Rütbeniz</li>
   </ul>
 
-  <h2>Kullanıcı İçeriği</h2>
-  <ul>
-    <li>Antrenman kayıtları — ilerlemenizi takip etmek için, Firebase Firestore'da saklanır</li>
-    <li>Profil fotoğrafı — isteğe bağlı, Firebase Storage'da saklanır</li>
-  </ul>
+  <p>Diğer tüm bilgileriniz (e-posta, yaş, kilo, cinsiyet, biyografi, profil fotoğrafı, antrenman kayıtları, oyun içi bakiyeler) diğer kullanıcılara kapalıdır.</p>
 
-  <h2>Cihaz Verileri</h2>
-  <ul>
-    <li>Adım sayacı — yalnızca cihazınızda işlenir, sunucuya gönderilmez</li>
-  </ul>
+  <h2>Kullandığımız Hizmet Sağlayıcılar</h2>
 
-  <h2>Analitik</h2>
-  <ul>
-    <li>Firebase Crashlytics — uygulama hatalarını tespit etmek için kullanılır, kişisel tanımlayıcı veri içermez</li>
-  </ul>
+  <table>
+    <thead><tr><th>Sağlayıcı</th><th>Hizmet</th></tr></thead>
+    <tbody>
+      <tr><td>Google Firebase</td><td>Kimlik doğrulama, veritabanı, dosya depolama, hata takibi, bildirim</td></tr>
+      <tr><td>Google AdMob</td><td>Ödüllü reklam gösterimi</td></tr>
+      <tr><td>Google Play Hizmetleri</td><td>Google ile giriş</td></tr>
+    </tbody>
+  </table>
 
-  <h2>Veri Saklama</h2>
-  <p>Hesabınızı sildiğinizde tüm verileriniz (antrenman kayıtları, profil bilgileri, oyun verileri) kalıcı olarak silinir. Bu işlem geri alınamaz.</p>
+  <p>Verileriniz bu hizmetler aracılığıyla Türkiye dışındaki sunucularda işlenebilir.</p>
+
+  <h2>Veri Saklama ve Silme</h2>
+
+  <ul>
+    <li>Verileriniz hesabınız aktif olduğu sürece saklanır.</li>
+    <li><strong>Profil → Ayarlar → Hesabımı Sil</strong> ile tüm verilerinizi kalıcı olarak silebilirsiniz.</li>
+    <li>Silme işlemi geri alınamaz; silinen veriler kurtarılamaz.</li>
+    <li>Hata kayıtları, Firebase'in kendi saklama politikası uyarınca sınırlı süre sonra otomatik silinir.</li>
+  </ul>
 
   <div class="divider"></div>
 
   <h2>İletişim</h2>
-  <p>Sorularınız için: <a href="mailto:redazzapp@gmail.com">redazzapp@gmail.com</a></p>
 
-  <p class="footer">© 2026 FitArena. Tüm hakları saklıdır.</p>
+  <p>Veri kullanımıyla ilgili sorularınız için: <strong><a href="mailto:redazzapp@gmail.com">redazzapp@gmail.com</a></strong></p>
+
+  <p class="footer">© 2026 Redazz. Tüm hakları saklıdır.</p>
 </div>
 </body>
 </html>
